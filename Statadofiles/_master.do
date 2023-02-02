@@ -1,13 +1,14 @@
-global loc "DIRECTORY\AiyagariPiketty_replication" // change this accordingly
+global loc "DIRECTORY\AiyagariPiketty_replication-main" // change this accordingly
 ********************************************************************************
 /*
 Retrieve data
 */
 
 * Load some needed packages
-*ssc install wid
-*ssc install wbopendata
-*ssc install kountry
+ssc install wid
+ssc install wbopendata
+ssc install kountry
+ssc install outreg2
 
 do "$loc\Statadofiles\getdata_historical"
 do "$loc\Statadofiles\getdata_recent"
